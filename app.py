@@ -242,7 +242,7 @@ class TestExecutor:
                     headers['Authorization'] = f"Bearer {self.current_token}"
                 
                 if step['method'] == 'GET':
-                    response = requests.get(url, headers=headers, timeout=5)
+                    response = requests.get(url, headers=headers, timeout=50)
                 elif step['method'] == 'POST':
                     response = requests.post(url, json=step.get('data', {}), headers=headers, timeout=5)
                 
