@@ -202,7 +202,7 @@ def encryption_status():
 # Test Execution Engine
 class TestExecutor:
     def __init__(self):
-        self.base_url = 'https://genaiexchangehackathon-2.onrender.com'
+        self.base_url = 'https://genaiexchangehackathon-2.onrender.com/'
         self.current_token = None
     
     def execute_test_suite(self, test_cases):
